@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Dr. Patrick Koopmann</title>
+		<style>
+			body {
+				margin: 0;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: 300;
+			}
+			a {
+				text-decoration:none;
+				color: #337ab7;
+			}
+			a:hover {
+				text-decoration:underline;
+				color: #23527c;
+			}
+
+
+			body > header {
+				color: #ddd;
+				background: #0B2A51;
+				text-align: center;
+				padding: 0.5em 0;
+				font-size: 0.9em;
+				margin: 0;
+				box-shadow: 0 0 10px rgba(6,21,41,0.8);
+			}
+			body > header a {
+				color: #ddd;
+				text-decoration: none;
+			}
+			body > header a:hover {
+				color: #ddd;
+			}
+
+
+			article {
+				max-width: 800px;
+				margin: 0 auto;
+				padding: 0 2em;
+				box-shadow: 0 0 10px rgba(6,21,41,0.3);
+			}
+			article header h2 {
+				margin: 0;
+				padding: 0.8em 0 0;
+			}
+			article table.contact td {
+				vertical-align: top;
+				min-width: 70px;
+			}
+			article ul {
+				list-style-type: circle;
+			}
+			article ul.publications li {
+				margin-bottom: 10px;
+			}
+			article ul.publications li b {
+				font-weight: 400;
+			}
+			article .end {
+				margin: 0;
+				padding: 0 0 1em;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<a href="http://www.tu-dresden.de/">TU&nbsp;Dresden</a> &nbsp;◆&nbsp;
+            <a href="http://www.inf.tu-dresden.de/">Faculty&nbsp;of&nbsp;Computer&nbsp;Science</a> &nbsp;◆&nbsp;
+			<a href="http://wwwtcs.inf.tu-dresden.de/">Institute&nbsp;of&nbsp;Theoretical&nbsp;Computer&nbsp;Science</a> &nbsp;◆&nbsp;
+			<a href="http://lat.inf.tu-dresden.de/index-en.html">Chair&nbsp;of&nbsp;Automata&nbsp;Theory</a>
+		</header>
+		<article>
+			<p style="float:right;margin-left:10px;margin-top:2em;"><img src="gesicht.jpg" width="239px" height="239px"></p><!-- "279px"></p> -->
+			<header>
+				<h2>Dr. Patrick Koopmann</h2>
+			</header>
+
+			<p> I am a researcher focussing on theoretical computer science, knowledge representation, description logics and ontologies. My main areas of interest are temporal and probabilistic extensions of description logics, non-standard reasoning tasks such as forgetting and abduction, and explainability of description logic reasoning. I am currently involved in the DFG collaborative research center <a href="https://www.perspicuous-computing.science/">CPEC</a> on perspicous software systems, and was formerly working within <a href="https://tu-dresden.de/ing/forschung/sfb912">HAEC</a> on situation recognition with probabilistic and temporal description logic reasoning.</p>
+			
+			<p> I did my PhD at the University of Manchester, where I developed practical methods for uniform interpolation and forgetting in expressive description logics. As part of my research, I developed the tool <a href="./LETHE/index.html">LETHE</a>, which can be used to compute uniform interpolants of ontologies, as well as to compute logical differences between ontology versions. After I finished my PhD, I worked as a researcher at the University of Oxford, before I then moved to Dresden.</p>
+			
+			<!-- <p>Currently I'm working in the DFG project <a href="https://www.hybrid-reasoning.org/en/">Hybris</a> -->
+<!--  (Hybrid Reasoning for Intelligent Systems) on probabilistic Description -->
+<!--  Logics based on the aggregating semantics and the principle of maximum  -->
+<!-- entropy. Previously, I have been a doctoral student in the <a href="http://lat.inf.tu-dresden.de/quantla">QuantLA</a> Research Training Group, where my research was focused on the use of similarity measures in Description Logics.</p> -->
+			<table class="contact">
+				<tbody>
+					<tr>
+						<td>Email:</td>
+						<td>patrick.koopmann@tu-dresden.de</td>
+					</tr>
+					<tr>
+						<td>Office:</td>
+						<td>Room 3030<br>Nöthnitzer Str. 46<br>01187 Dresden</td>
+					</tr>
+				</tbody>
+			</table>
+
+			
+			<p> You can find my publications at <a href="https://scholar.google.com/citations?user=W1o5TnEAAAAJ&hl=de">Google Scholar</a> and <a href="http://dblp.uni-trier.de/pers/hd/k/Koopmann:Patrick">DBLP</a>.</p>
+
+
+			<h2> Tools </h2>
+
+			Smaller and larger tools and libraries developed as part of my research.
+
+			<h3> CAPI - Connection-minimal Abduction using Prime
+			Implicates </h3>
+
+			<p> Performs TBox abduction for EL
+			ontologies, which can be used to repair and
+			  explain missing entailments.</p>
+
+			<p> UPDATE 2022-12-13: new version 0.2 with additional post-processing. 
+
+                        <p>
+			  <a href="CAPI/index.html">Website</a> 
+			</p>
+
+
+			
+			<h3> EVEE - Evincing Expressive DL Entailments </H3>
+
+                        <p> Although logic-based ontology languages
+                        offer the inherent possibility of explaining
+                        the process of deriving implicit knowledge,
+                        explaining complex Description Logic (DL)
+                        entailments to users is still a challenging
+                        task. So far, the ontology editor Protégé
+                        supports only (black-box) justifications and
+                        (glass-box) proofs for lightweight OWL 2 EL
+                        ontologies via the proof facilities of the
+                        reasoner Elk. Evee is a library for computing
+                        proofs that includes proof generation
+                        algorithms for DLs up to ALCH. It includes a
+                        recently developed technique for computing
+                        black-box elimination proofs as well as a
+                        glass-box technique based on the resolution
+                        calculus of Lethe, a tool for computing
+                        uniform interpolants. Additionally, it
+                        provides methods to optimize proofs that are
+                        generated via other methods according to
+                        various measures of proof quality. The Evee
+                        library is used by two frontends: a collection
+                        of Protégé plugins of the same name and the
+                        standalone tool Evonne, which supports more
+                        varied ways of displaying and interacting with
+                          proofs.
+			</p>
+
+			<p>
+			  <a href="https://github.com/de-tu-dresden-inf-lat/evee">Github-Page</a>
+			</p>
+
+			<h3> ELK Certifier </h3>
+
+			<p> Certify ELK classification results so that
+			they can be verified with the <a href="https://github.com/cvc5/LFSC">LFSC</a>
+			  proof-checker. </p>
+
+                        <p>
+			  <a href="ELK-Certifier/index.html">Website</a><br>
+			  <a href="ceur-ws.org/Vol-2663/paper-5.pdf">Paper</a>
+			</p>  
+
+			<h3> LETHE-Abduction </h3>
+
+			<p> An extension of LETHE for performing
+			signature-based abduction for ALC knowledge
+			bases. To be used as library for Java.</p>
+
+                        <p>
+			  <a href="LETHE-Abduction/index.html">Website</a><br>
+			  <a href="https://proceedings.kr.org/2020/59/">Paper</a>  
+			</p>
+			<h3> LETHE </h3>
+
+			<p> Uniform interpolation and forgetting for expressive description logics. (Supports SH knowledge bases, and with restrictions SHQ TBoxes.) Comes with a graphical front-end, but can also be used from the command line or as java library.</p>
+			<p>
+			  <a href="LETHE/index.html">Website</a><br>
+			  <a href="https://link.springer.com/article/10.1007/s13218-020-00655-w">Paper</a>
+			</p>
+
+			
+
+
+			
+			<h3> lat-scala-dl-tools </h3>
+
+			<p> Collection of classes and objects to make
+			work with OWL under Scala and Java more convenient.  </p>
+                        <p>
+			  <a href="https://github.com/de-tu-dresden-inf-lat/lat-scala-dl-tools">Github-Page</a>
+			</p>
+			
+			  <!--<a href="tools/dl-pretty-printer/dl-pretty-printer.zip">Download dl-pretty-printer 0.3</a><br>
+			  
+			  <a href="tools/dl-pretty-printer/README.md">README</a><br>
+			  
+			  <!-- <a href="tools/dl-pretty-printer/pizza.txt">Example
+			  (pizza ontology)</a> -->
+			</p>
+
+			<h3> forgetting-based-proof-generation </h3>
+
+			<p> Generating step-wise explanations or proofs of concept inclusions using a forgetting tool such as LETHE or FAME.
+			<p>
+			  <a href="tools/forgetting-based-proofs.zip">Source code</a><br>
+			  <a href="https://lat.inf.tu-dresden.de/XLoKR20/XLoKRpaper394.pdf">Paper (XLoKR'20)</a><br>
+			  <a href="https://doi.org/10.29007/nhpp">Paper (LPAR'20)</a><br>
+			  <a href="https://youtu.be/LS_B1AgaHSI">XLoKR talk (Youtube)</a><br>
+			
+			
+			
+
+			  <h2> News </h2>
+			  
+			  2020-09-20: incomplete list of tools added for download.<br>
+			  2020-02-28: uploaded <a href="./LETHE/">version 0.6</a> of LETHE. <br>
+			  <br>
+
+			  
+			</p>
+			<!-- <h3 style="clear:both;">Publications</h3> -->
+
+			
+<!-- 			<ul class="publications"> -->
+<!-- 				<li><b>Marco Wilhelm</b>, <b>Gabriele Kern-Isberner</b>, and <b>Andreas Ecke</b>. -->
+<!-- 					<a href="#">Propositional Probabilistic Reasoning at Maximum Entropy Modulo Theories</a>. -->
+<!-- 					In <i>Proceedings of the 29th International Florida Artificial Intelligence Research Society Conference (FLAIRS 2016)</i>. Key Largo, Florida, AAAI Press, 2016. -->
+<!-- 				</li> -->
+
+<!-- 				<li><b>Franz Baader</b> and <b>Andreas Ecke</b>. -->
+<!-- 					<a href="http://lat.inf.tu-dresden.de/research/papers/2016/BaEc-LATA16.pdf">Reasoning with Prototypes in the Description Logic ALC using Weighted Tree Automata</a>. -->
+<!-- 					In <i>Proceedings of the 10th International Conference on Language and Automata Theory and Applications (LATA 2016)</i>, volume 9618 of <i>Lecture Notes in Computer Science</i>. Prague, Czeck, Springer-Verlag, 2016. -->
+<!-- 				</li> -->
+
+<!-- 				<li><b>Andreas Ecke</b>, <b>Rafael Peñaloza</b>, and <b>Anni-Yasmin Turhan</b>. -->
+<!-- 					<a href="http://lat.inf.tu-dresden.de/research/papers/2015/EcPeTu-JAL15.pdf">“Similarity-based Relaxed Instance Queries</a>. -->
+<!-- 					In <i>Journal of Applied Logic</i> 13(4), 2015. -->
+<!-- 				</li> -->
+
+<!-- 				<li><b>Andreas Ecke</b>, <b>Maximilian Pensel</b>, and <b>Anni-Yasmin Turhan</b>. -->
+<!-- 					<a href="http://ceur-ws.org/Vol-1350/paper-49.pdf">ELASTIQ: Answering Similarity-threshold Instance Queries in EL</a>. -->
+<!-- 					In <i>Proceedings of the 28th International Workshop on Description Logics (DL-2015)</i>, volume 1350 of <i>CEUR Workshop Proceedings</i>. Athens, Greece, 2015. -->
+<!-- 				</li> -->
+
+<!-- 				<li><b>Andreas Ecke</b>. -->
+<!-- 					<a href="http://ceur-ws.org/Vol-1205/00010101.pdf">Similarity-based Relaxed Instance Queries in EL++</a>. -->
+<!-- 					In <i>Proceedings of the 1st Workshop on Logics for Reasoning about Preferences, Uncertainty, and Vagueness</i>, volume 1205 of <i>CEUR Workshop Proceedings</i>. Vienna, Austria, 2014. -->
+<!-- 				</li> -->
+
+<!-- 				<li><b>Andreas Ecke</b>, <b>Rafael Peñaloza</b>, and <b>Anni-Yasmin Turhan</b>. -->
+<!-- 					<a href="http://lat.inf.tu-dresden.de/research/papers/2014/EcPeTu-KR14.pdf">Answering Instance Queries Relaxed by Concept Similarity</a>. <\!-- https://www.aaai.org/ocs/index.php/KR/KR14/paper/view/7994 -\-> -->
+<!-- 					In <i>Proceedings of the 14th International Conference on Principles of Knowledge Representation and Reasoning (KR'14)</i>. Vienna, Austria, AAAI Press, 2014. -->
+<!-- 				</li> -->
+
+<!-- 				<li><b>Andreas Ecke</b>, <b>Rafael Peñaloza</b>, and <b>Anni-Yasmin Turhan</b>. -->
+<!-- 					<a href="http://ceur-ws.org/Vol-1193/paper_66.pdf">Mary, What's Like All Cats?</a>. -->
+<!-- 					In <i>Proceedings of the 27th International Workshop on Description Logics (DL-2014)</i>, volume 1193 of <i>CEUR Workshop Proceedings</i>. Vienna, Austria, 2013. -->
+<!-- 				</li> -->
+
+<!-- 				<li><b>Andreas Ecke</b>, <b>Rafael Peñaloza</b>, and <b>Anni-Yasmin Turhan</b>. -->
+<!-- 					<a href="http://lat.inf.tu-dresden.de/research/papers/2014/EcPeTu-IJAR-14.pdf">Completion-based Generalization Inferences for the Description Logic ELOR with Subjective Probabilities</a>. <\!-- http://www.sciencedirect.com/science/article/pii/S0888613X14000474 -\-> -->
+<!-- 					<i>International Journal of Approximate Reasoning</i> 55(9), 2014. -->
+<!-- 				</li> -->
+
+<!-- 				<li><b>Andreas Ecke</b>, <b>Rafael Peñaloza</b>, and <b>Anni-Yasmin Turhan</b>. -->
+<!-- 					<a href="http://lat.inf.tu-dresden.de/research/papers/2013/EcPeTu-KI-13.pdf">Computing Role-depth Bounded Generalizations in the Description Logic ELOR</a>. <\!-- https://link.springer.com/chapter/10.1007%2F978-3-642-40942-4_5 -\-> -->
+<!-- 					In <i>Proceedings of the 36th German Conference on Artificial Intelligence (KI 2013)</i>, volume 8077 of <i>Lecture Notes in Artificial Intelligence</i>. Koblenz, Germany, Springer-Verlag, 2013. -->
+<!-- 				</li> -->
+
+<!-- 				<li><b>Andreas Ecke</b>, <b>Rafael Peñaloza</b>, and <b>Anni-Yasmin Turhan</b>. -->
+<!-- 					<a href="http://ceur-ws.org/Vol-1014/paper_30.pdf">Role-depth bounded Least Common Subsumer in Prob-EL with Nominals</a>. -->
+<!-- 					In <i>Proceedings of the 26th International Workshop on Description Logics (DL-2013)</i>, volume 1014 of <i>CEUR Workshop Proceedings</i>. Ulm, Germany, 2013. -->
+<!-- 				</li> -->
+
+<!-- 				<li><b>Andreas Ecke</b>, <b>Michel Ludwig</b>, and <b>Dirk Walther</b>. -->
+<!-- 					<a href="http://ceur-ws.org/Vol-1008/paper3.pdf">The Concept Difference for EL-Terminologies using Hypergraphs</a>. -->
+<!-- 					In <i>Proceedings of the International Workshop on Document Changes: modeling, detection, storage and visualization (DChanges 2013)</i>, volume 1008 of <i>CEUR Workshop Proceedings</i>. Florence, Italy, 2013. -->
+					
+<!-- 				</li> -->
+
+<!-- 				<li><b>Andreas Ecke</b>, <b>Rafael Peñaloza</b>, and <b>Anni-Yasmin Turhan</b>. -->
+<!-- 					<a href="http://lat.inf.tu-dresden.de/research/papers/2013/EcPeTu-WL4AI-13.pdf">Towards Instance Query Answering for Concepts Relaxed by Similarity Measures</a>. -->
+<!-- 					In <i>Workshop on Weighted Logics for AI (in conjunction with IJCAI'13)</i>. Beijing, China, 2013. -->
+<!-- 				</li> -->
+
+<!-- 				<li><b>Andreas Ecke</b> and <b>Anni-Yasmin Turhan</b>. -->
+<!-- 					<a href="http://ceur-ws.org/Vol-849/paper_30.pdf">Optimizations for the Role-depth Bounded Least Common Subsumer in EL+</a>. -->
+<!-- 					In <i>Proceedings of 9th OWL: Experiences and Directions Workshop (OWLED 2012)</i>, volume 849 of <i>CEUR Workshop Proceedings</i>. Heraklion, Greece, 2012. -->
+<!-- 				</li> -->
+		
+<!-- 				<li><b>Andreas Ecke</b> and <b>Anni-Yasmin Turhan</b>. -->
+<!-- 					<a href="http://ceur-ws.org/Vol-846/paper_58.pdf">Role-depth Bounded Least Common Subsumers for EL+ and ELI</a>. -->
+<!-- 					In <i>Proceedings of the 25th International Workshop on Description Logics (DL-2012)</i>, volume 846 of <i>CEUR Workshop Proceedings</i>. Rome, Italy, 2012. -->
+<!-- 				</li> -->
+		
+<!-- 				<li><b>Julian Mendez</b>, <b>Andreas Ecke</b>, and <b>Anni-Yasmin Turhan</b>. -->
+<!-- 					<a href="http://ceur-ws.org/Vol-745/paper_56.pdf">Implementing Completion-based Inferences for the EL-family</a>. -->
+<!-- 					In <i>Proceedings of the 24th International Workshop on Description Logics (DL-2011)</i>, volume 745 of <i>CEUR Workshop Proceedings</i>. Barcelona, Spain, 2011. -->
+<!-- 				</li> -->
+<!-- 			</ul> -->
+<!-- 			<h3>Projects</h3> -->
+<!-- 			<ul> -->
+<!-- 				<li> -->
+<!-- 					<a href="http://sourceforge.net/projects/gen-el/">GEL: Generalizations for the EL family</a><br> -->
+<!-- 					This project implements generalization algorithms (role-depth  -->
+<!-- bounded least common subsumer and most specific concept) for the  -->
+<!-- description logics EL and extensions thereof. -->
+<!-- 				</li> -->
+<!-- 			</ul> -->
+<!-- 			<p class="end">&nbsp;</p> -->
+		</article>
+	
+
+</body></html>
